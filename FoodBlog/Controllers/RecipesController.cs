@@ -166,5 +166,26 @@ namespace FoodBlog.Controllers
         {
           return _context.Recipe.Any(e => e.Id == id);
         }
+
+        public IActionResult about()
+        {
+            return View();
+        }
+        public IActionResult blog()
+        {
+            return View();
+        }
+        public IActionResult featured()
+        {
+            return View();
+        }
+        public IActionResult recipes()
+        {
+            return View();
+        }
+        public IActionResult videos()
+        {
+            return View();
+        }
     }
 }
