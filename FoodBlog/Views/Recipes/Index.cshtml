@@ -9,7 +9,11 @@
 			<div class="header">
 				<ul>
 					<li class="current">
-						<a href="index.html">Home</a>
+						@*<a href="index.html">Home</a>*@
+					
+					   @* <a href="@Url.Action(" Index", "Home" )">*@
+						<a  asp-area="" asp-controller="Recipes" asp-action="Index">Home</a>
+						
 					</li>
 					<li>
 						<a href="recipes.html">A to Z Recipes</a>
