@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - FoodBlog</title>
         @* <title>Food &amp; Recipes Web Template</title>*@
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="~/FoodBlog.styles.css" asp-append-version="true" />
-
     <link rel="stylesheet" type="text/css" href="css/style.css">@*link of header of about*@
         @* <link rel="stylesheet" type="text/css" href="css/style.css"> link of header of blog*@
-
-
+  
 </head>
-
 <body>
     <div class="header">
         <div>
@@ -32,27 +29,28 @@
             <div class="header">
                 <ul>
                     <li class="current">
-                        <a asp-area="" asp-controller="Recipes" asp-action="Index">דף הבית</a>
+                        <a asp-controller="Recipes" asp-action="Index">דף הבית</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Recipes" asp-action="recipes">מתוקים</a>
+                        <a asp-controller="Recipes" asp-action="recipes">מתוקים</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Recipes" asp-action="featured">מומלצים לשבת</a>
+                        <a asp-controller="Recipes" asp-action="featured">מומלצים לשבת</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Recipes" asp-action="videos">צהריים לילדים</a>
+                        <a asp-controller="Recipes" asp-action="videos">צהריים לילדים</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Recipes" asp-action="about">בריאות</a>
+                        <a  asp-controller="Recipes" asp-action="about">בריאות</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Recipes" asp-action="blog">מנות פופולריות</a>
+                        <a asp-controller="Recipes" asp-action="blog">מנות פופולריות</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div>
+
                 <div>
                     <h3>Cooking Video</h3>
                     <a href="videos.html"><img src="images/cooking-video.png" alt="Image"></a>
@@ -113,7 +111,6 @@
 
         </div>
    
-    </div>
 
 
         @* we have to change from here to remove.html*@
@@ -124,15 +121,10 @@
                 @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - FoodBlog - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+@*
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
         @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
