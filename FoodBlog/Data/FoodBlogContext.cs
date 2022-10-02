@@ -14,6 +14,6 @@ namespace FoodBlog.Data
         {
         }
 
-        public DbSet<FoodBlog.Models.Recipe> Recipe { get; set; } = default!;
+        public DbSet<FoodBlog.Models.Recipe> Recipe { get; set; }
     }
 }
